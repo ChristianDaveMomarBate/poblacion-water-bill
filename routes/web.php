@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return "New Laravel Application";
 });
+
+Route::get('/goal', function () {
+    return "this time we'll officially create a water billing system";
+});
