@@ -14,7 +14,7 @@ class ConsumerController extends Controller
      */
     public function index()
     {
-        return view('consumers.index');
+        return view('admin.consumers.index');
     }
 
     /**
