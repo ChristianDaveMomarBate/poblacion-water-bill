@@ -5,7 +5,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            Dashboard Page Update
+            Dashboard Page
         </div>
 
         <div class="card-body">
