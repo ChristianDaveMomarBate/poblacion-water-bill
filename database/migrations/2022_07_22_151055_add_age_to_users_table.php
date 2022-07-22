@@ -13,14 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('consumers', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+        Schema::table('users', function (Blueprint $table) {
             $table->tinyInteger('age');
-            $table->string('gender');
-            $table->integer('number');
+            $table->tinyInteger('gender')->default('0');
+            $table->string('number');
             $table->string('address');
-            $table->timestamps();
         });
     }
 
@@ -31,6 +28,11 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('consumers');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('age');
+            $table->dropColumn('gender');
+            $table->dropColumn('number');
+            $table->dropColumn('address');
+        });
     }
 };
