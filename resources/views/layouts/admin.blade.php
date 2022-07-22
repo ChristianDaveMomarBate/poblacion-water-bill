@@ -50,7 +50,7 @@
     </a>
 
     <!-- Logout Modal-->
-    @include('layouts/includes/admin-logout-modal');
+    @include('layouts/includes/admin-logout-modal')
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
