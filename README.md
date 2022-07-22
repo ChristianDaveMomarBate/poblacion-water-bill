@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Online Water Billing System for Brgy. Poblacion Bacuag Water District
+## Brgy. Poblacion Bacuag Water District
 
-Online Water Billing System for Brgy. Poblacion Bacuag Water District. SNSU BSIT 3rd Year Capstone Project.
+Online water billing system with SMS notification. Surigao Del Norte State University - BSIT 3rd Year Capstone Project.
 
-## General Objectives
+## Objectives
 
 1. To identify the problem between the consumer and the water district department with regards to water facilities and services. 
 2. To create and design a web-based application that provides better services in line with the billing information and water status as well as collect feedback for the improvement of the service. 
