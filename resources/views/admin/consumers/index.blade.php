@@ -10,12 +10,14 @@
                 <h4>Consumers List</h4>
             </div>
             <div class="card-body">
-                @if (session('message'))
-                    <div class="alert alert-success">{{ session('message') }}</div>
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                 @endif
 
-                @if (session('message_delete'))
-                    <div class="alert alert-danger">{{ session('message_delete') }}</div>
+                @if (session('status_del'))
+                    <h6 class="alert alert-danger">{{ session('status_del') }}</h6>
                 @endif
 
                 <div class="table-responsive">
@@ -29,6 +31,8 @@
                                 <th>Gender</th>
                                 <th>Number</th>
                                 <th>Address</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,6 +48,18 @@
                                     <td>{{ $consumer->gender == '0' ? 'Male' : 'Female' }}</td>
                                     <td>{{ $consumer->number }}</td>
                                     <td>{{ $consumer->address }}</td>
+                                    <td>
+                                        <a href="{{ route('consumers.edit', $consumer->id) }}"
+                                            class="btn btn-primary">Edit</a>
+                                    </td>
+                                    <td>
+                                        <form action="{{ route('consumers.destroy', $consumer->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <input type="submit" value="Delete" class="btn btn-danger"
+                                                onclick="return confirm('Are you sure?')">
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
