@@ -9,34 +9,52 @@
     </div>
 </a>
 
-<!-- Divider -->
 <hr class="sidebar-divider my-0">
 
-<!-- Dashboard -->
+{{-- Dashboard --}}
 <li class="nav-item active">
     <a class="nav-link" href="#">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <i class="fa-solid fa-gauge-high"></i>
         <span>Dashboard</span>
     </a>
 </li>
 
-<!-- Divider -->
 <hr class="sidebar-divider">
 
-<!-- Heading -->
 <div class="sidebar-heading">
-    Interface
+    Account Info
 </div>
 
-<!-- Nav Item Consumers - Pages Collapse Menu -->
+{{-- Consumers --}}
 <li class="nav-item">
     <a class="nav-link" href="{{ route('consumers.index') }}">
-        <i class="fas fa-fw fa-cog"></i>
+        <i class="fa-solid fa-user-check"></i>
         <span>Consumers</span>
     </a>
 </li>
 
-<!-- Divider -->
+{{-- Billing --}}
+<li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-money-bill"></i>
+        <span>Billing</span>
+    </a>
+</li>
+
+<hr class="sidebar-divider d-none d-md-block">
+
+<div class="sidebar-heading">
+    Records
+</div>
+
+{{-- Feedbacks --}}
+<li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-comments"></i>
+        <span>Feedbacks</span>
+    </a>
+</li>
+
 <hr class="sidebar-divider d-none d-md-block">
 
 <!-- Sidebar Toggler (Sidebar) -->
