@@ -10,16 +10,16 @@
                 <h4>Consumers List</h4>
             </div>
             <div class="card-body">
-                @if (session('status'))
+                @if (session('update'))
                     <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
+                        {{ session('update') }}
                     </div>
                 @endif
-
-                @if (session('status_del'))
-                    <h6 class="alert alert-danger">{{ session('status_del') }}</h6>
+                @if (session('destroy'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('destroy') }}
+                    </div>
                 @endif
-
                 <div class="table-responsive">
                     <table id="myDataTable" class="table table-bordered table-striped" style="width: 100%;">
                         <thead>

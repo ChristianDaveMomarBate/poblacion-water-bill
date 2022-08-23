@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ConsumerRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class ConsumerController extends Controller
 {
@@ -24,28 +24,21 @@ class ConsumerController extends Controller
         return view('admin.consumers.edit', compact('consumers'));
     }
 
-    public function update(Request $request, $id)
+    public function update(ConsumerRequest $request, $id)
     {
         $consumers = User::find($id);
 
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255'],
-            'age' => ['required', 'integer', 'max:100'],
-            'gender' => ['required', 'string', 'max:255'],
-            'number' => ['required', 'string', 'max:255'],
-            'address' => ['required', 'string', 'max:255'],
-        ]);
+        $validates = $request->validated();
 
-        $consumers->name = $request->input('name');
-        $consumers->email = $request->input('email');
-        $consumers->age = $request->input('age');
-        $consumers->gender = $request->input('gender');
-        $consumers->number = $request->input('number');
-        $consumers->address = $request->input('address');
+        $consumers->name = $validates['name'];
+        $consumers->email = $validates['email'];
+        $consumers->age = $validates['age'];
+        $consumers->gender = $validates['gender'];
+        $consumers->number = $validates['number'];
+        $consumers->address = $validates['address'];
 
         $consumers->update();
-        return redirect()->route('consumers.index')->with('status', 'Consumers updated successfully!');
+        return redirect()->route('consumers.index')->with('update', 'Consumers updated successfully!');
     }
 
     public function destroy($id)
@@ -53,6 +46,6 @@ class ConsumerController extends Controller
         $consumers = User::find($id);
 
         $consumers->delete();
-        return redirect()->route('consumers.index')->with('status_del', 'Consumers deleted successfully!');
+        return redirect()->route('consumers.index')->with('destroy', 'Consumers deleted successfully!');
     }
 }

@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>@yield('title')</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('uploads/website-favicon/logo.png') }}">
 
     <!-- Custom fonts for this template -->
     {{-- <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"> --}}
