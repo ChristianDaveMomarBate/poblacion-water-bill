@@ -12,8 +12,8 @@
 <hr class="sidebar-divider my-0">
 
 {{-- Dashboard --}}
-<li class="nav-item active">
-    <a class="nav-link" href="#">
+<li class="nav-item {{ Request::is('admin') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('dashboard') }}">
         <i class="fa-solid fa-gauge-high"></i>
         <span>Dashboard</span>
     </a>
@@ -26,7 +26,7 @@
 </div>
 
 {{-- Consumers --}}
-<li class="nav-item">
+<li class="nav-item {{ Request::is('admin/consumers') ? 'active' : '' }}">
     <a class="nav-link" href="{{ route('consumers.index') }}">
         <i class="fa-solid fa-user-check"></i>
         <span>Consumers</span>
@@ -34,8 +34,8 @@
 </li>
 
 {{-- Billing --}}
-<li class="nav-item">
-    <a class="nav-link" href="#">
+<li class="nav-item {{ Request::is('admin/billing') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('billings.index') }}">
         <i class="fa-solid fa-money-bill"></i>
         <span>Billing</span>
     </a>
@@ -48,8 +48,8 @@
 </div>
 
 {{-- Feedbacks --}}
-<li class="nav-item">
-    <a class="nav-link" href="#">
+<li class="nav-item {{ Request::is('admin/feedback') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('feedback.index') }}">
         <i class="fa-solid fa-comments"></i>
         <span>Feedbacks</span>
     </a>

@@ -10,6 +10,9 @@
                 <div class="card shadow-lg">
                     <div class="card-body p-5">
                         <h1 class="fs-4 card-title fw-bold mb-4 text-center">Login</h1>
+                        @if (session('status'))
+                            <h6 class="alert alert-warning text-center">{{ session('status') }}</h6>
+                        @endif
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
