@@ -11,6 +11,6 @@ class HomeController extends Controller
 
     public function userPage()
     {
-        return view('user.home');
+        return view('users.home');
     }
 }

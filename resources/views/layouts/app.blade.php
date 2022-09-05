@@ -72,7 +72,9 @@
             </div>
         </nav>
 
-        @yield('content')
+        <main>
+            @yield('content')
+        </main>
     </div>
 
     {{-- Bootstrap JS --}}

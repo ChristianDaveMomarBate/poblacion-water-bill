@@ -16,7 +16,7 @@ class FeedbackController extends Controller
 
     public function create()
     {
-        return view('user.feedback.create');
+        return view('users.feedback.create');
     }
 
     public function store(Request $request)
