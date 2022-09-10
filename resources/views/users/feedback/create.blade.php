@@ -11,8 +11,8 @@
                     <div class="card-body p-5">
                         <h1 class="fs-4 card-title fw-bold text-center">Consumers Feedback</h1>
                         <p class="mb-2 text-muted text-center">
-                            We appreciate you using our service. You may enter your
-                            thoughts and feedback below.
+                            Thank you for using our service. To improve it, you are welcome to enter your feedback and
+                            concerns below.
                         </p>
                         <form method="POST" action="{{ route('feedback.store') }}">
                             @csrf

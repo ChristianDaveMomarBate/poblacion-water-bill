@@ -13,6 +13,116 @@
 
     {{-- Bootstrap CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        video.bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 0;
+        }
+
+        .masthead {
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .masthead:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.612);
+        }
+
+        .masthead .masthead-content {
+            position: relative;
+            max-width: 52rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .masthead .masthead-content h1,
+        .masthead .masthead-content .h1 {
+            font-size: 2.5rem;
+        }
+
+        .masthead .masthead-content p {
+            font-size: 1.2rem;
+        }
+
+        .masthead .masthead-content p strong {
+            font-weight: 700;
+        }
+
+        .masthead .masthead-content .input-group-newsletter input {
+            height: auto;
+            width: 100%;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        .masthead .masthead-content .input-group-newsletter button {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: calc(1rem + 2px);
+        }
+
+        .lh-1 {
+            line-height: 1 !important;
+        }
+
+        @media (min-width: 992px) {
+            .masthead {
+                height: 100%;
+                width: 75vw;
+                min-height: 0;
+                padding-bottom: 0;
+            }
+
+            .masthead:before {
+                transform: skewX(-9deg);
+                transform-origin: top right;
+            }
+
+            .masthead .masthead-content {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 2rem;
+                padding-right: 9rem;
+            }
+
+            .masthead .masthead-content h1,
+            .masthead .masthead-content .h1 {
+                font-size: 3.5rem;
+            }
+
+            .masthead .masthead-content p {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .masthead {
+                width: 65vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
