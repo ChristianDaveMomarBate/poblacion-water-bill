@@ -7,7 +7,7 @@
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-center">
                     <h1 class="text-white font-weight-bold">
-                        "Conserve Water Today for the Use of Tommorow"
+                        "Conserve <span style="color: #0f41e6c8"><strong>Water</strong></span> Today for the Use of Tommorow"
                     </h1>
                     <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                 </div>
@@ -16,7 +16,7 @@
     </header>
 
     <!-- About -->
-    <section class="page-section bg-dark" id="about">
+    <section class="page-section bg-about" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
