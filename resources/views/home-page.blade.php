@@ -20,9 +20,9 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">About Us</h2>
+                    <h1 class="text-white mt-0">About Us</h1>
                     <hr class="divider divider-light" />
-                    <p class="text-white mb-4">
+                    <p class="text-white mb-4 fs-5">
                         Bacuag Water District was established in 1993. Our main objective is to serve Bacuaganons clean and
                         safe consumable water. We ought to provide high-quality services for the development of water
                         sources, the design of water distribution systems, the building and installation of transmission and
@@ -40,9 +40,9 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-dark mt-0">Mission</h2>
-                    <hr class="divider" />
-                    <p class="text-dark mb-4">
+                    <h1 class="text-dark mt-0">Mission</h1>
+                    <hr class="divider divider-dark" />
+                    <p class="text-dark mb-4 fs-5">
                         To give Bacuaganons access to drinkable, safe, and sustainable water, to provide wastewater
                         treatment services, operating efficiently, take a proactive role in environmental concerns, promote
                         inclusive development through equal and equitable access to water, and maintain a competent
@@ -58,9 +58,9 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Vision</h2>
+                    <h1 class="text-white mt-0">Vision</h1>
                     <hr class="divider divider-light" />
-                    <p class="text-white mb-4">
+                    <p class="text-white mb-4 fs-5">
                         A pioneer in the water and sanitation sector is promoting integrated water resource management.
                     </p>
                 </div>

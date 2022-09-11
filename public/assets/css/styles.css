@@ -11323,6 +11323,10 @@ hr.divider {
   opacity: 1;
 }
 
+hr.divider-dark {
+  background-color: #111;
+}
+
 hr.divider-light {
   background-color: #fff;
 }
