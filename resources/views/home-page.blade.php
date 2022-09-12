@@ -7,7 +7,7 @@
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-center">
                     <h1 class="text-white font-weight-bold">
-                        "Conserve <span style="color: #0f41e6c8"><strong>Water</strong></span> Today for the Use of Tommorow"
+                        "<span style="color: #00e5ff"><strong>Conserve Water</strong></span> Today for the Use of Tommorow"
                     </h1>
                     <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                 </div>
