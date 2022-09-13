@@ -34,7 +34,7 @@
 </li>
 
 {{-- Billing --}}
-<li class="nav-item {{ Request::is('admin/billing') ? 'active' : '' }}">
+<li class="nav-item {{ Request::is('admin/billings') ? 'active' : '' }}">
     <a class="nav-link" href="{{ route('billings.index') }}">
         <i class="fa-solid fa-money-bill"></i>
         <span>Billing</span>
