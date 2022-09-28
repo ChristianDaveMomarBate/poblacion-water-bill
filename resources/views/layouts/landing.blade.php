@@ -7,7 +7,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>{{ config('app.name', 'Bacuag Water District') }}</title>
+    <title>Bacuag Water District</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/website-favicon/logo.png') }}">
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
