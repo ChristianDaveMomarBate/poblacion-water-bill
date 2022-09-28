@@ -7,8 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Bacuag Water District</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/website-favicon/logo.png') }}">
+    <title>{{ config('app.name', 'Bacuag Water District') }}</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -59,6 +58,9 @@
                             </li>
                         @endif
                     @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('userPage') }}">My Page</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
