@@ -7,10 +7,12 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>{{ config('app.name', 'Bacuag Water District') }}</title>
+    {{-- <title>{{ config('app.name', 'Bacuag Water District') }}</title> --}}
+    <title>Bacuag Water District</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/website-favicon/logo.png') }}">
 
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    {{-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> --}}
 
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
